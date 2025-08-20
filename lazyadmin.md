@@ -1,4 +1,6 @@
-# fase 1 reconocimiento 
+# Lazyadmin
+---
+## fase 1 reconocimiento 
  nmap -Pn -sS -sV --open -vv 10.201.96.143
 --
 **PORT   STATE SERVICE VERSION**
