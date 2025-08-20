@@ -1,6 +1,6 @@
-Fase 1 reconocimiento 
+## Fase 1 reconocimiento 
  nmap -Pn -sS -sV --open -vv 10.201.96.143
-
+--
 PORT   STATE SERVICE REASON         VERSION
 22/tcp open  ssh     syn-ack ttl 61 OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 80/tcp open  http    syn-ack ttl 61 Apache httpd 2.4.18 ((Ubuntu))
