@@ -50,6 +50,9 @@ Luego utilizamos *grep* para buscar palabras claves en el archivo
 ---
 Aqui encontramos credenciales, pero la contraseña esta en forma de *hash*
 
+`s:7:\\"manager\\";\`
+`s:32:\\"42f749ade7f9e195bf475f37a44cafcb\\";\`
+
 ---
 Utilizaremos **hash-identifier** para saber que tipo de hash es
 
