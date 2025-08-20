@@ -1,0 +1,3 @@
+Fase 1 reconocimiento y enumeracion 
+
+nmap -Pn -sS -sV -T4 --open -vv  
