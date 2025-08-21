@@ -14,3 +14,15 @@
 |80/tcp|    open  | http  |          syn-ack ttl 63 | Apache httpd 2.4.41 ((Ubuntu)) |
 ---
 Puerto 80 abierto, significa que una pagina web esta corriendo. 
+---
+## 2. Fase de enumeracion activa 
+Utilizaremos Gobuster para la busqueda de directorios ocultos.
+
+/.hta                 (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htpasswd            (Status: 403) [Size: 277]
+/images               (Status: 301) [Size: 313] [--> http://10.10.231.44/images/]
+/index.html           (Status: 200) [Size: 969]
+/javascript           (Status: 301) [Size: 317] [--> http://10.10.231.44/javascript/]
+/server-status        (Status: 403) [Size: 277]
+Progress: 4613 / 4613 (100.00%)
