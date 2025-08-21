@@ -16,7 +16,7 @@ Hay un puerto 80 abierto, significa que una pagina web esta corriendo
 ́Revisamos y solo vemos el predeterminado mensaje de Ubuntu. asi que utilizaremos *Gobuster* para la busqueda de directorios ocultos
  `gobuster dir -u http://10.201.96.143/ -w /usr/share/dirb/wordlists/common.txt`
  
-vemos que hay un directorios /content. aqui encontramos la primera pista, utiliza un CMS Sweetrice, que es un sistema de gestion de paginas webs 
+vemos que hay un directorios /content. aqui encontramos la primera pista, utiliza un CMS SweetRice, que es un sistema de gestion de paginas webs 
 ---
 volvemos a utilizar Gobuster para buscar directorios: 
 ### Directorios encontrados: 
@@ -33,7 +33,7 @@ volvemos a utilizar Gobuster para buscar directorios:
 /index.php  |          (Status: 200) | [Size: 2199]
 /js        |           (Status: 301) | [Size: 319] | [--> http://10.201.96.143/content/js/] |
 ---
-revisamos cada uno y encontramos algo interesante en /inc hay un backup sql y con el comnado `curl -O http://10.201.96.143/content/inc/mysql_backup/` lo descargamos. 
+revisamos cada uno y encontramos algo interesante en `/inc` hay un backup sql y con el comnado `curl -O http://10.201.96.143/content/inc/mysql_backup/` lo descargamos. 
 Luego utilizamos *grep* para buscar palabras claves en el archivo 
 
 `grep INSERT mysql_bakup_20191129023059-1.5.1.sql`
