@@ -75,7 +75,7 @@ Utilizaremos **hash-identifier** para saber que tipo de hash es
 # Explotacion web 
 
 ---
-Anteriormente habiamos utilizado Gobuster para encontrar directorios, uno de ellos nos llevaba al panel de login de **SweetRice**. Iniciaremos sesion en el panel utilizando las credenciales que conseguimos.
+Anteriormente descubrimos el CMS SweetRice version 1.5.1 que es tiene una vulnerabilidad tipo Arbitrary File Upload.
 
 ---
 ## Subida de payload (Arbitrary File Upload)
